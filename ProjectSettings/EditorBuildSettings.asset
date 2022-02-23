@@ -8,4 +8,7 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/OutdoorsScene.unity
     guid: 8124e5870f4fd4c779e7a5f994e84ad1
+  - enabled: 1
+    path: Assets/Scene/start.unity
+    guid: 656b5fae66202b948851ab2bea1fde8c
   m_configObjects: {}
