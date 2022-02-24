@@ -6,6 +6,7 @@ public class Player_Ray : MonoBehaviour
 {
     [SerializeField] private float distanceRay;
     [SerializeField] private LayerMask obejectSelectMask;
+ 
 
     private Transform m_Transform;
 
@@ -23,6 +24,9 @@ public class Player_Ray : MonoBehaviour
         if (Physics.Raycast(ray, out RaycastHit hitinfo, distanceRay, obejectSelectMask))
         {
             Debug.Log(hitinfo.collider.name);
+            hitinfo.collider.gameObject.GetComponent<MeshRenderer>().material.color = Color.green;
+                //GetComponent<MeshRenderer>().material.color = Color.green;
         }
+        
     }
 }
